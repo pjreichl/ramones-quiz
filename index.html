@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ramones Quiz</title>
+    <meta name="description" content="A quiz to test your knowledge the famous rock band The Ramones" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    
+    <div class="bg">
+    
+        <section class="scorekeeper" role="banner">
+
+            <ul>
+                <li>Question:<span class="question-number"> 0</span><span class="total-questions">/10</span></li>
+                <li>Score: <span class="current-score">0</span></li>
+            </ul>
+        </section>
+
+        <main role="main" class="game">
+            <section class="home">
+                <h1 class="introduction">Think you know a lot about the Ramones?</h1>
+
+                <button type="button" class="start-game">Hey Ho, Let's Go!</button>
+            </section>
+
+            <section class="question-view"></section>
+
+            <section class="answer-view"></section>
+            
+            <section class="results-view"></section>
+
+        </main>
+    
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </div>
+</body>
+
+</html>
