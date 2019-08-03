@@ -198,14 +198,20 @@ function gameOver() {
 
 function resetGame() {
     $('main').on('click', '.reset-game', function (event) {
-        //location.reload(true);
-        $('.results-view').html("");
-        $('.answer-view').html("");
-        $('.home').html(`<section class="home">
-                <h1 class="introduction">Think you know a lot about the Ramones?</h1>
-
-                <button type="button" class="start-game">Hey Ho, Let's Go!</button>
-            </section>`)
+        location.reload(true);
+//        $('.results-view').html("");
+//        $('.answer-view').html("");
+        
+        // aleady inactive before fix attempt
+//        $('.home').html(`<section class="home">
+//                <h1 class="introduction">Think you know a lot about the Ramones?</h1>
+//
+//                <button type="button" class="start-game">Hey Ho, Let's Go!</button>
+//            </section>`)
+        
+        //end of already inactive section
+        
+        $('.home').html("");
         gameOver();
         startGame();
         renderQuestion();
